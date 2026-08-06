@@ -1,0 +1,19 @@
+name: Simple issue
+description: Quick issue report with minimal fields
+title: "[Issue] "
+labels: [needs-triage]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: What happened?
+      description: Write your issue in simple words.
+      placeholder: Describe the problem or question.
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Contact email (optional)
+      placeholder: you@example.com
