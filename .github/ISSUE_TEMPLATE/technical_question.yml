@@ -1,0 +1,32 @@
+name: Technical question
+description: Ask for help with setup or usage
+title: "[Question] "
+labels: [question, needs-triage]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Question summary
+      placeholder: What do you need help with?
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain the context and what you already tried.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows/macOS/Linux, browser, device
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Optional but very helpful.
