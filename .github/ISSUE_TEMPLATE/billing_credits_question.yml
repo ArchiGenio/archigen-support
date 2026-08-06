@@ -1,0 +1,43 @@
+name: Billing or credits question
+description: Ask about credit usage, billing, or unexpected consumption
+title: "[Billing] "
+labels: [question, billing-credits, needs-triage]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      placeholder: Example: Credits dropped faster than expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: action
+    attributes:
+      label: What were you doing?
+      description: Describe the action or workflow that caused extra usage.
+      placeholder: I generated 3 previews and credits dropped by 20.
+    validations:
+      required: true
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: When did this happen?
+      placeholder: 2026-08-06 14:30 UTC
+
+  - type: input
+    id: workspace
+    attributes:
+      label: Project/workspace name (optional)
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Extra details
+      description: Include model, mode, retries, screenshots, or logs if available.
+
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include passwords, API keys, card details, or any sensitive data.
